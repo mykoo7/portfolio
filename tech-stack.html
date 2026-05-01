@@ -1,66 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma. Yesha Klarisse Opon | Web Portfolio</title>
+
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="main-tech-stack">
+
+<body class="font-sans leading-relaxed bg-gray-100 text-gray-800">
     <!--Navigation Bar-->
-    <header><div class="logo">MYKOO</div>
-        <div class="breadcrumbs text-sm">
-          <ul>
+    <header class="flex flex-col md:flex-row justify-between items-center px-12 py-5 bg-white shadow-sm gap-4">
+        
+        <div class="text-2xl font-bold text-blue-600">MYKOO</div>
+        
+          <ul class="flex gap-5 text-sm">
             <li>
-                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
             </li>
             <li>
-                <a href="about-me.html" class="hover:text-blue-600">About</a>
+                <a href="about-me.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
             </li>
             <li>
-                <a href="tech-stack.html" class="hover:text-blue-600">Tech Stack</a>
+                <a href="tech-stack.html" class="text-gray-600 hover:text-blue-600 transition">Tech Stack</a>
             </li>
             <li>
-                <a href="cert.html" class="hover:text-blue-600">Certification</a>
+                <a href="cert.html" class="text-gray-600 hover:text-blue-600 transition">Certification</a>
             </li>
           </ul>
-        </div></header>
+        
+    </header>
 
         <!--Main and usinf Flexbox to display Tech Stacks-->
-        <h1 class="tech-title">Tech Stack</h1>
-    <div class="card">
-            <div>
-                <img src=".images/tech-stack/c.jpg">
-                <p>C</p>
+        <h1 class="text-5xl font-extrabold text-center mt-12 text-gray-900">Tech Stack</h1>
+
+    <div class="flex flex-wrap justify-center gap-6 px-10 py-12">
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                <img src=".images/tech-stack/c.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">C</p>
             </div>
-            <div>
-                <img src=".images/tech-stack/java.jpg">
-                <p>Java</p>
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                <img src=".images/tech-stack/java.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">Java</p>
             </div>
-            <div>
-                 <img src=".images/tech-stack/sql.jpg">
-                <p>SQL</p>
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                 <img src=".images/tech-stack/sql.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">SQL</p>
             </div>
-            <div>
-                 <img src=".images/tech-stack/vscode.jpg">
-                <p>VSCODE</p>
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                 <img src=".images/tech-stack/vscode.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">VSCODE</p>
             </div>
-            <div>
-                 <img src=".images/tech-stack/css.jpg">
-                <p>CSS</p>
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                 <img src=".images/tech-stack/css.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">CSS</p>
             </div>
-            <div>
-                 <img src=".images/tech-stack/java-script.jpg">
-                <p>JavaScript</p>
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                 <img src=".images/tech-stack/java-script.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">JavaScript</p>
             </div>
-            <div>
-                 <img src=".images/tech-stack/mongodb.jpg">
-                <p>MongoDB</p>
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                 <img src=".images/tech-stack/mongodb.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">MongoDB</p>
             </div>
-            <div>
-                 <img src=".images/tech-stack/android-studio.jpg">
-                <p>Android Studio</p>
+
+            <div class="flex flex-col items-center gap-2 hover:text-blue-600 transition">
+                 <img src=".images/tech-stack/android-studio.jpg" class="w-24 h-24 object-cover rounded-xl shadow-md">
+                <p class="text-gray-700 hover:text-blue-600 transition">Android Studio</p>
             </div>
+
         </div>
 </body>
 </html>
