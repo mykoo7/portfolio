@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma. Yesha Klarisse Opon | Web Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="about-me">
+
+<body class="font-sans leading-relaxed bg-gray-100 text-gray-800">
        <!-- Navigation Bar -->
-    <header>
-        <div class="logo">MYKOO</div>
-        <div class="breadcrumbs text-sm">
-          <ul>
+    <header class="flex flex-col md:flex-row justify-between items-center px-12 py-5 bg-white shadow-sm gap-4">
+
+        <div class="text-2xl font-bold text-blue-600">MYKOO</div>
+
+          <ul class="flex gap-5 text-sm">
             <li>
-                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
             </li>
             <li>
-                <a href="about-me.html" class="hover:text-blue-600">About</a>
+                <a href="about-me.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
             </li>
             <li>
-                <a href="tech-stack.html" class="hover:text-blue-600">Tech Stack</a>
+                <a href="tech-stack.html" class="text-gray-600 hover:text-blue-600 transition">Tech Stack</a>
             </li>
             <li>
-                <a href="cert.html" class="hover:text-blue-600">Certification</a>
+                <a href="cert.html" class="text-gray-600 hover:text-blue-600 transition">Certification</a>
             </li>
           </ul>
-        </div>
+
     </header>
 
     <!----Main ---->
-    <section class="main-about">
-        <h1>About Me</h1>
-        <p> I'm a 2nd year student who's currently navigating my way towards the future as an IT Student.</p>
+    <section class="flex flex-col justify-center items-center text-center px-12 py-16 min-h-[80vh] gap-8">
+        
+        <h1 class="text-5xl font-extrabold mb-4 text-gray-900">About Me</h1>
 
         <!--Used Flexbox to display other about me info's -->
-        <div class="container">
-            <div>
-                <p>Currently into developing apps in Android Studio</p>
+        <div class="flex flex-col items-center gap-5 max-w-2x1">
+
+            <div class="bg-gray-900 text-white rounded-2xl p-6 shadow-lg w-full max-w-md">
+                <p class="text-sm leading-relaxed text-center">
+                    I am a 2nd year college student studying Information Technology.
+                    Currently interested in designing GUI's for school activities and projects. 
+                    Whenever I get free time, I like to spend my time in reading fanfictions, watching movies, playing games on my laptop, and listening to music all day long.
+                    When things get tuff I always try to look on the bright side and keep up a positive attitude.
+                    Ofcourse food and drinks always gets me motivated. 
+                    </p>
             </div>
-            <div>
-                <p>Learning html and css</p>
+
+            <div class="bg-gray-900 text-white rounded-2xl p-6 shadow-lg w-full max-w-md">
+                <p class="text-sm leading-relaxed text-center">My professional aspirations are centered on becoming a skilled front-end developer who build clean and responsive designs for websites. 
+                    I aim to continuously hone my skills in html, css, javascript, and java. 
+                    I would also like to work on my designing skills, picking the right colors, fonts, and designs to include in my next projects.
+                    I will also aim to be a full-stack developer when the time comes.</p>
             </div>
-            <div>
-                <p>Enhancing my skills in java</p>
-            </div>
+
         </div>
         </section>
 </body>
