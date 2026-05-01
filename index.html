@@ -5,38 +5,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ma. Yesha Klarisse Opon | Web Portfolio</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="home-page">
+
+    <body class="font-sans leading-relaxed bg-gray-100 text gray-800">
+        
         <!-- Navigation Bar -->
-    <header>
-        <div class="logo">MYKOO</div>
-        <div class="breadcrumbs text-sm">
-          <ul>
+    <header class="flex flex-col md:flex-row justify-between items-center px-12 py-5 bg-white shadow-sm gap-4">
+       
+        <div class="text-2xl font-bold text-blue-600">MYKOO</div>
+        
+          <ul class="flex gap-5 text-sm">
             <li>
-                <a href="about-me.html" class="hover:text-blue-600">About</a>
+                <a href="about-me.html" class="text-gray hover:text-blue-600 transition">About</a>
             </li>
             <li>
-                <a href="tech-stack.html" class="hover:text-blue-600">Tech Stack</a>
+                <a href="tech-stack.html" class="text-gray hover:text-blue-600 transition">Tech Stack</a>
             </li>
             <li>
-                <a href="cert.html" class="hover:text-blue-600">Certification</a>
+                <a href="cert.html" class="text-gray hover:text-blue-600 transition">Certification</a>
             </li>
           </ul>
-        </div>
+        
     </header>
 
     <!-- Main -->
-    <section class="main">
-        <div class="left">
-            <h1>Hi, I'm Ma. Yesha Klarisse Opon</h1>
-            <p>Aspiring front-end developer and student.</p>
+    <section class="flex flex-col md:flex-row justify-between items-center px-12 py-16 min-h-[80vh] text-center md:text-left gap-10">
+        
+        <div class="max-w-md">
+            <h1 class="text-4xl mb-4 text-gray-900">Hi, I'm Ma. Yesha Klarisse Opon</h1>
+            <p class="text-lg text-gray-500">Aspiring front-end developer and student.</p>
         </div>
 
-        <div class="right">
-            <div class="image-box">
-                <img src=".images/index/opon-profile.jpg" alt="My Photo">
+        <div class="flex justify-center items-center">
+            <div class="w-72 h-72 rounded-2x1 overflow-hidden shadow-lg">
+                <img src=".images/index/opon-profile.jpg" 
+                alt="My Photo"
+                class="w-full h-full object cover">
             </div>
         </div>
+
     </section>
     </body>
 </html>
