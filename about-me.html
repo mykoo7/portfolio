@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma. Yesha Klarisse Opon | Web Portfolio</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> <!--STYLE.CSS-->
+
+    <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CSS-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet"> <!--FONT-->
 </head>
 
-<body class="font-sans leading-relaxed bg-gray-100 text-gray-800">
+<body>
        <!-- Navigation Bar -->
-    <header class="flex flex-col md:flex-row justify-between items-center px-12 py-5 bg-white shadow-sm gap-4">
+    <header>
 
-        <div class="text-2xl font-bold text-blue-600">MYKOO</div>
+        <div class="logo">MYKOO</div>
 
-          <ul class="flex gap-5 text-sm">
+        <div class="breadcrumbs">
+          <ul>
             <li>
-                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="about-me.html" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                <a href="about-me.html">About</a>
             </li>
             <li>
-                <a href="tech-stack.html" class="text-gray-600 hover:text-blue-600 transition">Tech Stack</a>
+                <a href="tech-stack.html">Tech Stack</a>
             </li>
             <li>
-                <a href="cert.html" class="text-gray-600 hover:text-blue-600 transition">Certification</a>
+                <a href="cert.html">Certification</a>
             </li>
           </ul>
-
+        </div>
     </header>
 
     <!----Main ---->
@@ -40,7 +45,7 @@
         <!--Used Flexbox to display other about me info's -->
         <div class="flex flex-col items-center gap-5 max-w-2x1">
 
-            <div class="bg-gray-900 text-white rounded-2xl p-6 shadow-lg w-full max-w-md">
+            <div class="bg-gray-900 text-white rounded-2xl p-6 shadow-lg w-full max-w-md hover:-translate-y-1 hover:shadow-xl">
                 <p class="text-sm leading-relaxed text-center">
                     I am a 2nd year college student studying Information Technology.
                     Currently interested in designing GUI's for school activities and projects. 
@@ -50,7 +55,7 @@
                     </p>
             </div>
 
-            <div class="bg-gray-900 text-white rounded-2xl p-6 shadow-lg w-full max-w-md">
+            <div class="bg-gray-900 text-white rounded-2xl p-6 shadow-lg w-full max-w-md hover:-translate-y-1 hover:shadow-xl">
                 <p class="text-sm leading-relaxed text-center">My professional aspirations are centered on becoming a skilled front-end developer who build clean and responsive designs for websites. 
                     I aim to continuously hone my skills in html, css, javascript, and java. 
                     I would also like to work on my designing skills, picking the right colors, fonts, and designs to include in my next projects.
@@ -58,6 +63,6 @@
             </div>
 
         </div>
-        </section>
+    </section>
 </body>
 </html>
