@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ma. Yesha Klarisse Opon | Web Portfolio</title>
+
+     <link rel="stylesheet" href="style.css"> <!--STYLE.CSS-->
+    
+     <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CSS-->
+
+     <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap" rel="stylesheet"> <!--FONT-->
 </head>
-<body class="cert">
+
+<body>
     <header>
+
         <div class="logo">MYKOO</div>
-        <div class="breadcrumbs text-sm">
+        
+        <div class="breadcrumbs">
           <ul>
             <li>
-                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="about-me.html" class="hover:text-blue-600">About</a>
+                <a href="about-me.html">About</a>
             </li>
             <li>
-                <a href="tech-stack.html" class="hover:text-blue-600">Tech Stack</a>
+                <a href="tech-stack.html">Tech Stack</a>
             </li>
             <li>
-                <a href="cert.html" class="hover:text-blue-600">Certification</a>
+                <a href="cert.html">Certification</a>
             </li>
           </ul>
         </div>
     </header>
-    <section class="main-cert">
-        <h1 class="cert-title">Certificates</h1>
-        <div class="cert-container">
 
-            <div class="cert-card">
-                <img src=".images/certifications/ms-word-associate.jpg">
-                <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&format=pdf&id=498">Microsoft Word Certificate</a>
+        <h1 class="text-5xl font-extrabold text-center mt-12 text-gray-900">Certificates</h1>
+
+        <section class="flex justify-center mt-10 mb-12 px-6">
+
+        <div class="flex flex-wrap justify-center gap-6 max-w-5xl">
+
+            <div class="bg-white w-56 p-4 rounded-2xl shadow-md flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-xl transition duration-300">
+                <img src=".images/certifications/ms-word-associate.jpg" 
+                class="w-24 h-24 object-cover rounded-xl mb-3"
+                onclick="openModal(this.src)">
+
+                <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&format=pdf&id=498"
+                target="_blank"
+                class="text-blue-600 text-sm hover:underline">
+                Microsoft Word Certificate</a>
             </div>
 
-            <div class="cert-card">
-                <img src=".images/certifications/ms-powerpoint-associate.jpg">
-                <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&format=pdf&id=500">Microsoft Word Certificate</a>
+            <div class="bg-white w-56 p-4 rounded-2xl shadow-md flex flex-col items-center text-center hover:-translate-y-1 hover:shadow-xl transition duration-300">
+                <img src=".images/certifications/ms-powerpoint-associate.jpg" 
+                class="w-24 h-24 object-cover rounded-xl mb-3"
+                onclick="openModal(this.src)">
+                
+                <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&format=pdf&id=500"
+                class="text-blue-600 text-sm hover:underline">
+                Microsoft Word Certificate</a>
             </div>
 
         </div>
+
         </section>
+        
+    <div id="imageModal" class="fixed inset-0 hidden bg-black/80 flex items-center justify-center z-50">
+            <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded shadow-lg">
+    </div>
+    
+     <script src="script.js"></script>
 </body>
 </html>
