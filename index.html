@@ -15,6 +15,17 @@
 
     <body>
         
+        <!--Animation BG-->
+        <div class="animation-area">
+            <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         <!-- Navigation Bar -->
     <header>
        
@@ -36,21 +47,23 @@
     </header>
 
     <!-- Main -->
-    <section class="flex flex-col md:flex-row justify-between items-center px-12 py-16 min-h-[80vh] text-center md:text-left gap-10">
+    <section class="flex flex-col justify-center items-center px-6 sm:px-10 md:px-12 py-12 md:py-16 min-h-screen text-center gap-8 md: gap-10">
+      
+    <!--Image Display-->    
+        <div class="w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 rounded-full overflow-hidden border-4 border-rose-900">
+                    <img src="images/index/opon-final-profile.jpg" 
+                        class="w-full h-full object-cover"/>
+        </div>
         
+    <!--Info-->
         <div class="max-w-md">
-            <h1 class="text-4xl mb-4 text-gray-900">Hi, I'm Ma. Yesha Klarisse Opon</h1>
-            <p class="text-lg text-gray-500">Aspiring front-end developer and student.</p>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl mb-4 text-rose-950 font-extrabold">
+                Hi, I'm Ma. Yesha Klarisse Opon
+            </h1>
+            <p class="text-lg sm:text-xl text-rose-950">
+                Aspiring front-end developer and student.
+            </p>
         </div>
-
-        <div class="flex justify-center items-center">
-            <div class="w-72 h-72 rounded-2x1 overflow-hidden shadow-lg">
-                <img src="images/index/opon-profile.jpg" 
-                alt="My Photo"
-                class="w-full h-full object cover">
-            </div>
-        </div>
-
     </section>
     </body>
 </html>
