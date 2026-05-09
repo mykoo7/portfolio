@@ -9,3 +9,4 @@ const modalImg = document.getElementById("modalImg");
     modal.addEventListener("click", () => {
     modal.classList.add("hidden");
     });
+

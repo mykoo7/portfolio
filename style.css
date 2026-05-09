@@ -59,6 +59,17 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menu.show {
+        display: flex;
+    }
+}
+
 /*FONT*/
 body {
   font-family: "Port Lligat Sans", sans-serif;
@@ -154,3 +165,4 @@ body {
         opacity: 0;
     }
 }
+
