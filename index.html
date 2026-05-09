@@ -63,7 +63,7 @@
             <p class="text-lg sm:text-xl text-rose-950">
                 Aspiring front-end developer and student
             </p>
-            <p class="text-lg sm:text-xl text-rose-900 font-extrabold pt-6">
+            <p class="contact-me text-lg sm:text-xl text-rose-900 font-extrabold pt-6">
                 Contact Me
             </p>
             <a href="https://github.com/mykoo7" target="_blank" class="inline-block">
@@ -72,5 +72,29 @@
             </a>
         </div>
     </section>
+
+    <script type="module">
+        import { animate, stagger, splitText } from 'https://esm.sh/animejs';
+    
+        const { chars } = splitText('.contact-me', { words: false, chars: true });
+        
+        animate(chars, {
+          // Property keyframes
+          y: [
+            { to: '-2.75rem', ease: 'outExpo', duration: 600 },
+            { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
+          ],
+          // Property specific parameters
+          rotate: {
+            from: '-1turn',
+            delay: 0
+          },
+          delay: stagger(50),
+          ease: 'inOutCirc',
+          loopDelay: 1000,
+          loop: true
+        });
+        </script>
+    
     </body>
 </html>
