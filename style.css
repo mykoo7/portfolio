@@ -59,6 +59,25 @@ header {
     }
 }
 
+/* MOBILE NAVIGATION AKA HAMBURGER */
+@media (max-width: 640px) {
+    .breadcrumbs {
+        display: none !important;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header.open .breadcrumbs {
+        display: flex !important;
+    }
+
+    .logo {
+        cursor: pointer;
+        user-select: none;
+    }
+}
 
 /*FONT*/
 body {

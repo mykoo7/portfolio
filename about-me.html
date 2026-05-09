@@ -30,10 +30,10 @@
        <!-- Navigation Bar -->
     <header>
 
-        <div class="logo">MYKOO</div>
+        <div class="logo" id="logoToggle">MYKOO</div>
 
-        <div class="breadcrumbs">
-          <ul>
+        <div class="breadcrumbs" id="navMenu">
+          <ul id="menu">
             <li>
                 <a href="index.html">Home</a>
             </li>
@@ -74,30 +74,9 @@
                     I would also like to work on my designing skills, picking the right colors, fonts, and designs to include in my next projects.
                     I will also aim to be a full-stack developer when the time comes.</p>
             </div>
-
         </div>
     </section>
 
-        <!--ANIME.JS TEXT ANIMATION-->
-        <script type="module">
-            import { animate, stagger, splitText } from 'https://esm.sh/animejs';
-        
-            const { chars } = splitText('h1', { words: false, chars: true });
-            
-            animate(chars, {
-              // Property keyframes
-              y: [
-                { to: '-2.75rem', ease: 'outExpo', duration: 600 },
-                { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
-              ],
-              // Property specific parameters
-              rotate: {
-                from: '-1turn',
-                delay: 0
-              },
-              delay: stagger(50),
-              ease: 'inOutCirc',
-            });
-            </script>
+        <script type="module" src="script.js"></script> <!-- CONNECTS TO SCRIPT.JS-->
 </body>
 </html>

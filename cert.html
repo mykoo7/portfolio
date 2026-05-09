@@ -27,12 +27,14 @@
             </ul>
         </div>
 
+        
+    <!--Navigation Bar-->
     <header>
 
-        <div class="logo">MYKOO</div>
+        <div class="logo" id="logoToggle">MYKOO</div>
         
-        <div class="breadcrumbs">
-          <ul>
+        <div class="breadcrumbs" id="navMenu">
+          <ul id="menu">
             <li>
                 <a href="index.html">Home</a>
             </li>
@@ -49,6 +51,8 @@
         </div>
     </header>
 
+    
+    <!--CERTIFICATES-->
         <h1 class="text-5xl font-extrabold text-center mt-12 text-rose-950">Certificates</h1>
 
         <section class="flex justify-center mt-10 mb-12 px-6">
@@ -85,28 +89,6 @@
             <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded shadow-lg">
     </div>
     
-     <script src="script.js"></script>
-
-         <!--ANIME.JS TEXT ANIMATION-->
-    <script type="module">
-        import { animate, stagger, splitText } from 'https://esm.sh/animejs';
-    
-        const { chars } = splitText('h1', { words: false, chars: true });
-        
-        animate(chars, {
-          // Property keyframes
-          y: [
-            { to: '-2.75rem', ease: 'outExpo', duration: 600 },
-            { to: 0, ease: 'outBounce', duration: 800, delay: 100 }
-          ],
-          // Property specific parameters
-          rotate: {
-            from: '-1turn',
-            delay: 0
-          },
-          delay: stagger(50),
-          ease: 'inOutCirc',
-        });
-        </script>
+     <script type="module" src="script.js"></script> <!-- CONNECTS TO SCRIPT.JS-->
 </body>
 </html>
