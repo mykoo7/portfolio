@@ -3,11 +3,11 @@ import { animate, stagger, splitText } from 'https://esm.sh/animejs'; /* ANIME.J
 document.addEventListener("DOMContentLoaded", () => {
 
   /* NAVIGATION TOGGLE FOR MOBILE */
-  const logo = document.getElementById("logoToggle");
+  const hamburger = document.getElementById("hamburger");
   const header = document.querySelector("header");
 
-  if (logo && header) {
-    logo.addEventListener("click", () => {
+  if (hamburger && header) {
+    hamburger.addEventListener("click", () => {
       header.classList.toggle("open");
     });
   }

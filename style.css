@@ -59,23 +59,57 @@ header {
     }
 }
 
-/* MOBILE NAVIGATION AKA HAMBURGER */
+/* DEFAULT (desktop & tablet) */
+.hamburger {
+    display: none;
+    color:  oklch(27.1% 0.105 12.094);
+}
+
+/* MOBILE ONLY */
 @media (max-width: 640px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+
+        flex-wrap: wrap;   /* allows menu to go below */
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
     .breadcrumbs {
         display: none !important;
-        flex-direction: column;
         width: 100%;
-        text-align: center;
-        margin-top: 10px;
+        background: oklch(89.2% 0.058 10.001);
+        padding: 20px 0;
+        justify-content: center;
+
+        order: 3; /* forces it BELOW logo + hamburger */
     }
 
     header.open .breadcrumbs {
         display: flex !important;
     }
 
-    .logo {
-        cursor: pointer;
-        user-select: none;
+    .breadcrumbs ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .breadcrumbs a {
+        text-align: center;
+        width: 100%;
+        display: block;
+        padding: 10px 0;
     }
 }
 
