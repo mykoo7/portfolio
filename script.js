@@ -6,11 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
   const header = document.querySelector("header");
 
-  if (hamburger && header) {
+  
     hamburger.addEventListener("click", () => {
       header.classList.toggle("open");
+
+      if (header.classList.contains("open")){
+        hamburger.textContent = "✖";
+      } else {
+        hamburger.textContent = "☰";
+      }
     });
-  }
+  
 
   /* MODAL (CERT PAGE) */
   const modal = document.getElementById("imageModal");
@@ -27,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* TEXT ANIMATION */
+  /* ANIME.JS TEXT ANIMATION */
   const h1 = document.querySelector("h1");
 
   if (h1) {
