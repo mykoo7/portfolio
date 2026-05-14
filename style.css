@@ -69,13 +69,13 @@ header {
 @media (max-width: 640px) {
 
     header {
+        position: relative; /* IMPORTANT */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
-
-        flex-wrap: wrap;   /* allows menu to go below */
+        flex-wrap: wrap;
     }
 
     .hamburger {
@@ -86,12 +86,19 @@ header {
 
     .breadcrumbs {
         display: none !important;
+
+        position: absolute;   
+        top: 100%;            
+        left: 0;
         width: 100%;
+
         background: oklch(89.2% 0.058 10.001);
         padding: 20px 0;
         justify-content: center;
 
-        order: 3; /* forces it BELOW logo + hamburger */
+        z-index: 999;         
+
+        order: unset;         
     }
 
     header.open .breadcrumbs {
@@ -103,6 +110,7 @@ header {
         align-items: center;
         gap: 15px;
         padding: 0;
+        margin: 0;
     }
 
     .breadcrumbs a {
